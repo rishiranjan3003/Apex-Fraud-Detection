@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Fraud Detection</title>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="orange" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="D:\B.Tech\Credit fraud detection\home.html" class="brand-logo">Credit Fraud Detection</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="D:\B.Tech\Credit fraud detection\home.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="index-banner">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br>
+                <h1 class="header center blue-text">WELCOME TO CREDIT FRAUD DETECTION</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class=" login container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <h1 class="header center black-text text-lighten-2">Detail Form</h1>
+            </div>
+        </div>
+        <!-- Main Input For Receiving Query to our ML -->
+        <div class="row">
+            <form action="{{ url_for('predict')}}" method="post" class="col s12">
+                <div class="column">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix black-text">account_circle</i>
+                        <input name="Account Number" placeholder="Account Number" type="number" class="validate" required="required" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix black-grey-text">account_circle</i>
+                        <input name="Customer Name" placeholder="Customer Name" type="text" class="validate" required="required" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix black-grey-text">credit_card</i>
+                        <input name="Credit Number" placeholder="Credit Number" type="number" class="validate" required="required" />
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-field col s6 ">
+                        <button type="submit " color="blue" name="action" class="btn btn-primary btn-block btn-large ">Predit
+                    <i class="material-icons right ">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="center">{{ prediction_text }}</div>
+    <footer class="page-footer green ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col l6 s12 ">
+                    <h5 class="black-text ">Credit Fraud Detection</h5>
+                    <p class="grey-text text-lighten-4 ">Credit Fraud Detection is used for the checking the fraud which done in the transation history.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright ">
+            <div class="container ">
+                Made by Team Harsh Gupta, Sonali Pandey, Prashant Shukla, Sakshi Srivastava. <a class="black-text text-lighten-3 ">CopyRight for 2021</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
