@@ -1,4 +1,3 @@
-INSTALLED_APPS = [
 ‘honeypot’,
 ‘ckeditor’,
 ‘ckeditor_uploader’,
