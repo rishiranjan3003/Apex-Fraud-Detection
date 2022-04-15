@@ -1,11 +1,29 @@
+INSTALLED_APPS = [
+‘honeypot’,
+‘ckeditor’,
+‘ckeditor_uploader’,
+‘modeltranslation’,
+‘django.contrib.admin’,
+‘django.contrib.auth’,
+‘django.contrib.contenttypes’,
+‘django.contrib.sessions’,
+‘django.contrib.messages’,
+‘django.contrib.staticfiles’,
+‘product.apps.ProductConfig’,
+‘captcha’,
+‘admin_honeypot’,
+]
+
 alabaster==0.7.12
 anaconda-client==1.7.2
 anaconda-navigator==1.10.0
 anaconda-project==0.8.3
+appdirs==1.4.4
 argh==0.26.2
 argon2-cffi @ file:///C:/ci/argon2-cffi_1596828585465/work
+asgiref==3.3.1
 asn1crypto @ file:///tmp/build/80754af9/asn1crypto_1596577642040/work
-astroid==2.3.3
+astroid @ file:///C:/ci/astroid_1592487315634/work
 astropy==4.0.2
 async-generator==1.10
 atomicwrites==1.4.0
@@ -32,7 +50,7 @@ chardet==3.0.4
 click==7.1.2
 cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1598884132938/work
 clyent==1.2.2
-colorama==0.4.3
+colorama @ file:///tmp/build/80754af9/colorama_1603211150991/work
 comtypes==1.1.7
 conda==4.9.2
 conda-build==3.20.5
@@ -47,7 +65,19 @@ dask @ file:///tmp/build/80754af9/dask-core_1602083700509/work
 decorator==4.4.2
 defusedxml==0.6.0
 diff-match-patch @ file:///tmp/build/80754af9/diff-match-patch_1594828741838/work
+distlib==0.3.1
 distributed @ file:///C:/ci/distributed_1605066635297/work
+Django==3.1.4
+django-admin-honeypot==1.1.0
+django-ckeditor==6.0.0
+django-crispy-forms==1.10.0
+django-debug-toolbar==3.2
+django-decouple==2.1
+django-honeypot==0.9.0
+django-js-asset==1.2.2
+django-modeltranslation==0.16.1
+django-recaptcha==2.0.6
+django-rosetta==0.9.5
 docutils==0.16
 entrypoints==0.3
 et-xmlfile==1.0.1
@@ -62,10 +92,9 @@ glob2==0.7
 greenlet @ file:///C:/ci/greenlet_1600885448389/work
 h5py==2.10.0
 HeapDict==1.0.1
+helpdev==0.7.1
 html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
-htmlmin==0.1.12
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
-ImageHash==4.2.1
 imageio @ file:///tmp/build/80754af9/imageio_1594161405741/work
 imagesize==1.2.0
 importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1602276842396/work
@@ -75,7 +104,7 @@ ipykernel @ file:///C:/ci/ipykernel_1596190155316/work/dist/ipykernel-5.3.4-py3-
 ipython @ file:///C:/ci/ipython_1604083276484/work
 ipython-genutils==0.2.0
 ipywidgets @ file:///tmp/build/80754af9/ipywidgets_1601490159889/work
-isort==4.3.21
+isort @ file:///tmp/build/80754af9/isort_1602603989581/work
 itsdangerous==1.1.0
 jdcal==1.4.1
 jedi @ file:///C:/ci/jedi_1592833825077/work
@@ -101,7 +130,6 @@ MarkupSafe==1.1.1
 matplotlib @ file:///C:/ci/matplotlib-base_1603355780617/work
 mccabe==0.6.1
 menuinst==1.4.16
-missingno==0.5.0
 mistune==0.8.4
 mkl-fft==1.2.0
 mkl-random==1.1.1
@@ -110,8 +138,8 @@ mock==4.0.2
 more-itertools @ file:///tmp/build/80754af9/more-itertools_1605111547926/work
 mpmath==1.1.0
 msgpack==1.0.0
-multimethod==1.4
 multipledispatch==0.6.0
+mysql-connector-python==8.0.22
 navigator-updater==0.2.1
 nbclient @ file:///tmp/build/80754af9/nbclient_1602783176460/work
 nbconvert @ file:///C:/ci/nbconvert_1601914925608/work
@@ -129,7 +157,6 @@ olefile==0.46
 openpyxl @ file:///tmp/build/80754af9/openpyxl_1598113097404/work
 packaging==20.4
 pandas @ file:///C:/ci/pandas_1602083338010/work
-pandas-profiling==3.0.0
 pandocfilters @ file:///C:/ci/pandocfilters_1605102497129/work
 paramiko @ file:///tmp/build/80754af9/paramiko_1598886428689/work
 parso==0.7.0
@@ -140,34 +167,41 @@ pathtools==0.1.2
 patsy==0.5.1
 pep8==1.7.1
 pexpect==4.8.0
-phik==0.12.0
 pickleshare==0.7.5
 Pillow @ file:///C:/ci/pillow_1603823068645/work
 pkginfo==1.6.1
 pluggy==0.13.1
 ply==3.11
+polib==1.1.0
 prometheus-client==0.8.0
 prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1602688806899/work
+protobuf==3.14.0
 psutil @ file:///C:/ci/psutil_1598370330503/work
+ptyprocess==0.7.0
 py @ file:///tmp/build/80754af9/py_1593446248552/work
 pycodestyle==2.6.0
 pycosat==0.6.3
 pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
 pycurl==7.43.0.6
-pydantic==1.8.2
 pydocstyle @ file:///tmp/build/80754af9/pydocstyle_1598885001695/work
 pyflakes==2.2.0
 Pygments @ file:///tmp/build/80754af9/pygments_1604103097372/work
-pylint==2.4.4
+pylint @ file:///C:/ci/pylint_1598617153160/work
+PyMySQL==1.0.2
 PyNaCl @ file:///C:/ci/pynacl_1595000047588/work
 pyodbc===4.0.0-unsupported
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
 pyparsing==2.4.7
+PyQt5==5.12.3
+PyQt5-sip==12.8.1
+PyQtWebEngine==5.12.1
 pyreadline==2.1
 pyrsistent @ file:///C:/ci/pyrsistent_1600141795814/work
 PySocks==1.7.1
 pytest==0.0.0
 python-dateutil==2.8.1
+python-decouple==3.4
+python-gettext==4.0
 python-jsonrpc-server @ file:///tmp/build/80754af9/python-jsonrpc-server_1600278539111/work
 python-language-server @ file:///tmp/build/80754af9/python-language-server_1600454544709/work
 pytz==2020.1
@@ -194,7 +228,7 @@ Send2Trash==1.5.0
 simplegeneric==0.8.1
 singledispatch @ file:///tmp/build/80754af9/singledispatch_1602523705405/work
 sip==4.19.13
-six==1.14.0
+six @ file:///C:/ci/six_1605187374963/work
 snowballstemmer==2.0.0
 sortedcollections==1.2.1
 sortedcontainers==2.2.2
@@ -206,14 +240,14 @@ sphinxcontrib-htmlhelp==1.0.3
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.4
-sphinxcontrib-websupport @ file:///tmp/build/80754af9/sphinxcontrib-websupport_1597081412696/work
+sphinxcontrib-wesupport @ file:///tmp/build/80754af9/sphinxcontrib-websupport_1597081412696/work
 spyder @ file:///C:/ci/spyder_1599054115447/work
 spyder-kernels @ file:///C:/ci/spyder-kernels_1599051709837/work
 SQLAlchemy @ file:///C:/ci/sqlalchemy_1603818908746/work
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
 statsmodels==0.12.0
 sympy @ file:///C:/ci/sympy_1605101511098/work
 tables==3.6.1
-tangled-up-in-unicode==0.1.0
 tblib @ file:///tmp/build/80754af9/tblib_1597928476713/work
 terminado==0.9.1
 testpath==0.4.4
@@ -222,13 +256,14 @@ tifffile==2020.10.1
 toml @ file:///tmp/build/80754af9/toml_1592853716807/work
 toolz @ file:///tmp/build/80754af9/toolz_1601054250827/work
 tornado==6.0.4
+tox==3.21.1
 tqdm @ file:///tmp/build/80754af9/tqdm_1602185206534/work
 traitlets @ file:///tmp/build/80754af9/traitlets_1602787416690/work
 typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1598376058250/work
 ujson @ file:///C:/ci/ujson_1602505266082/work
 unicodecsv==0.14.1
 urllib3 @ file:///tmp/build/80754af9/urllib3_1603305693037/work
-visions==0.7.1
+virtualenv==20.3.1
 watchdog @ file:///C:/ci/watchdog_1593447437088/work
 wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 webencodings==0.5.1
